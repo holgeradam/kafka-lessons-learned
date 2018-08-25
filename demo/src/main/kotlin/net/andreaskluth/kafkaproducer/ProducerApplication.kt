@@ -33,7 +33,6 @@ class FrOSConProducer {
         config[VALUE_SERIALIZER_CLASS_CONFIG] = StringSerializer::class.java.name
         config[REQUEST_TIMEOUT_MS_CONFIG] = 10_000
 
-        config[ENABLE_IDEMPOTENCE_CONFIG] = true
         config[ACKS_CONFIG] = "all"
         config[RETRIES_CONFIG] = 1
 
